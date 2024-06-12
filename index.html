@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="top">
+        <div id="sidebar" class="sidebar">
+            <button onclick="showCheckedItems()">Checked Items</button>
+            <button onclick="showPendingItems()">Pending Items</button>
+            <button onclick="showRemovedItems()">Removed Items</button>
+        </div>
+        <button id="toggleSidebar" class="toggle-btn">☰</button>
+        <h2>To-Do List</h2>
+    </div>
+    <div class="input-container">
+        <input type="text" id="dataInput" placeholder="Write your to-do item">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Task</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
